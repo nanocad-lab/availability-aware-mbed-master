@@ -2,7 +2,7 @@
 # see http://mbed.org/handbook/Exporting-to-GCC-ARM-Embedded
 
 GCC_BIN =
-PROJECT = ChargingAware
+PROJECT = availability-aware-mbed-master
 OBJECTS = ./main.o ./HardwareTimersLib/HardwareTimer.o ./HardwareTimersLib/Timer_LPTMR.o ./HardwareTimersLib/Timer_TPM.o ./HardwareTimersLib/Timer_PIT.o ./HardwareTimersLib/PreciseTime.o ./UtilityLib/SerialManager.o ./UtilityLib/util.o ./SensorsLib/TouchSensor.o ./SensorsLib/MAG3110.o ./SensorsLib/MMA8451Q.o ./SensorsLib/I2CSensor.o ./SensorsLib/PeriodicSensor.o ./SensorsLib/INA219.o ./SensorsLib/SleepableSensor.o ./SensorsLib/MAX17043.o ./SensorsLib/TSISensor.o ./SensorsLib/ADCSensor.o 
 SYS_OBJECTS = ./mbed/TARGET_KL46Z/TOOLCHAIN_GCC_ARM/startup_MKL46Z4.o ./mbed/TARGET_KL46Z/TOOLCHAIN_GCC_ARM/system_MKL46Z4.o ./mbed/TARGET_KL46Z/TOOLCHAIN_GCC_ARM/cmsis_nvic.o ./mbed/TARGET_KL46Z/TOOLCHAIN_GCC_ARM/retarget.o 
 INCLUDE_PATHS = -I. -I./mbed -I./mbed/TARGET_KL46Z -I./mbed/TARGET_KL46Z/TOOLCHAIN_GCC_ARM -I./HardwareTimersLib -I./UtilityLib -I./SensorsLib 
